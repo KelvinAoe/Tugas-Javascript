@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var divisi = prompt ("isi nama divisi kamu: ")
+        
+        if (divisi == "CEO"){
+            console.log("Boleh di Rekrut")
+        }else if(divisi == "CTO"){
+            console.log("Boleh di Rekrut")
+        }else if(divisi == "HR"){
+            console.log("Boleh di Rekrut")
+        }else if(divisi == "PROGRAMER"){
+            console.log("Boleh di Rekrut")
+        }else{
+            console.log("Tidak masuk Kriteria!!")
+        }
+        
+        var a = prompt("Masukan Nilai A :")
+        var b = prompt("Masukan Nilai B :")
+
+                if(a < b){
+                    console.log("Nilai A lebih kecil dari pada Nilai B")
+                }else if(a > b) {
+                    console.log("Nilai A lebih besar dari pada Nilai B")
+                }else{
+                    console.log("Nilai A sama dengan Nilai B ")
+                }
+
+        var nilai = prompt ('Masukan kode hari 1-7: ')
+        var nama_hari;
+        switch(nilai){
+        case "1" :
+            nama_hari = "Senin";
+        break;
+        case "2" :
+            nama_hari = "Selasa";
+        break;
+        case "3" :
+            nama_hari = "Rabu";
+        break;
+        case "4" :
+            nama_hari = "Kamis";
+        break;
+        case "5" :
+            nama_hari = "Jumat";
+        break;
+        case "6" :
+            nama_hari = "Sabtu";
+        break;
+        case "7" :
+            nama_hari = "Minggu";
+        break;
+        default :
+        nama_hari = "Kode nya salah"
+        }
+        document.write("Hari"+nama_hari);
+
+        var move = "UP"
+        var action;
+        switch(move){
+            case "UP" : 
+            action = console.log("Karakter berjalan ke atas");
+            break; 
+            case "BOTTOM" : 
+            action = console.log("Karakter berjalan ke bawah");
+            break; 
+            case "RIGHT" : 
+            action = console.log("Karakter berjalan ke kanan");
+            break; 
+            case "LEFT" : 
+            action = console.log("Karakter berjalan ke kiri");
+            break; 
+            default : 
+            action = console.log("Karakter tidak bergerak")
+        }
+        document.write(action);
+
+
+    </script>
+
+
+</body>
+</html>
